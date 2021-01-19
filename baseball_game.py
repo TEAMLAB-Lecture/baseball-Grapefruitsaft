@@ -204,7 +204,7 @@ def get_strikes_or_ball(user_input_number, random_number):
     # ===Modify codes below=============
     # 조건에 따라 변환되어야 할 결과를 result 변수에 할당
 
-    result = None
+    result = [3, 0]
 
     strikes = 0
     ball = 0
@@ -282,7 +282,7 @@ def is_no(one_more_input):
     # >>> bg.is_no("yes")
     # False
     # '''
-    # ===Modify codes below=============
+    # ===Modify codes below=============abc
     # 조건에 따라 변환되어야 할 결과를 result 변수에 할당
 
     result = None
@@ -308,13 +308,13 @@ def main():
         if(user_input == '0'):
             flag = False
             continue
-        print(is_validated_number(user_input))
+        # print(is_validated_number(user_input))
         if is_validated_number(user_input) == False:
-            print("Wrong Input, Input again\n")
+            print("Wrong Input, Input again")
             continue
 
         strikes, ball = get_strikes_or_ball(user_input, random_number)
-        print('Strikes : ', strikes, ', Balls : ', ball, '\n')
+        print('Strikes :', strikes, ', Balls :', ball, '\n')
         if(strikes == 3):
             while(True):
                 one_more_input = input('You won, one more(Y/N) ?')
@@ -327,7 +327,7 @@ def main():
                     flag = False
                     break
                 else:
-                    print("Wrong Input, Input again\n")
+                    print("Wrong Input, Input again")
 
     # ==================================
     print("Thank you for using this program")
