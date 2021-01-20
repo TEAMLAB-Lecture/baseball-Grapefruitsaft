@@ -314,7 +314,7 @@ def main():
             continue
 
         strikes, ball = get_strikes_or_ball(user_input, random_number)
-        print('Strikes :', strikes, ', Balls :', ball, '\n')
+        print('Strikes :', strikes, ', Balls :', ball)
         if(strikes == 3):
             while(True):
                 one_more_input = input('You won, one more(Y/N) ?')
